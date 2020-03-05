@@ -50,6 +50,14 @@ public class PaginaInicialTasks extends BaseTest {
         return PaginaInicialPO.valorSimulacaoLabel().getText();
     }
 
+    public String getCabecalhoTabelaTempo(){
+        return PaginaInicialPO.cabecalhoTabelaTempoLabel().getText();
+    }
+
+    public String getCabecalhoTabelaValor(){
+        return PaginaInicialPO.cabecalhoTabelaValorLabel().getText();
+    }
+
 
 
 }

@@ -47,4 +47,12 @@ public class PaginaInicialPO extends BaseTest {
         return driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/span[1]"));
     }
 
+    public static WebElement cabecalhoTabelaTempoLabel(){
+        return driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/div[1]/table/thead/tr/th[1]"));
+    }
+
+    public static WebElement cabecalhoTabelaValorLabel(){
+        return driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/div[1]/table/thead/tr/th[2]"));
+    }
+
 }
