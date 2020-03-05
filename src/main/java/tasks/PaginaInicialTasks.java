@@ -27,15 +27,15 @@ public class PaginaInicialTasks extends BaseTest {
     }
 
     public String getValorAplicarErro(){
-        return PaginaInicialPO.valorAplicarMinimoErro().getText();
+        return PaginaInicialPO.valorAplicarMinimoErroLabel().getText();
     }
 
     public String getValorInvestirErro(){
-        return PaginaInicialPO.valorInvestirMinimoErro().getText();
+        return PaginaInicialPO.valorInvestirMinimoErroLabel().getText();
     }
 
     public String getNaoConfereErro(){
-        return PaginaInicialPO.valorNaoConfereErro().getText();
+        return PaginaInicialPO.valorNaoConfereErroLabel().getText();
     }
 
     public void clicarBotaoSimular(){
@@ -43,7 +43,11 @@ public class PaginaInicialTasks extends BaseTest {
     }
 
     public String getSimulacaoProntaText(){
-        return PaginaInicialPO.simulacaoProntaMensagem().getText();
+        return PaginaInicialPO.simulacaoProntaMensagemLabel().getText();
+    }
+
+    public String getValorSimulacao(){
+        return PaginaInicialPO.valorSimulacaoLabel().getText();
     }
 
 

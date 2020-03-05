@@ -20,17 +20,17 @@ public class PaginaInicialPO extends BaseTest {
         return driver.findElement(By.id("tempo"));
     }
 
-    public static WebElement valorAplicarMinimoErro(){
+    public static WebElement valorAplicarMinimoErroLabel(){
         WebDriverWait wait = new WebDriverWait(driver, 3);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"valorAplicar-error\"]")));
     }
 
-    public static WebElement valorInvestirMinimoErro(){
+    public static WebElement valorInvestirMinimoErroLabel(){
         WebDriverWait wait = new WebDriverWait(driver, 3);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"valorInvestir-error\"]")));
     }
 
-    public static WebElement valorNaoConfereErro(){
+    public static WebElement valorNaoConfereErroLabel(){
         WebDriverWait wait = new WebDriverWait(driver, 3);
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"tempo-error\"]")));
     }
@@ -39,7 +39,11 @@ public class PaginaInicialPO extends BaseTest {
         return driver.findElement(By.xpath("//*[@id=\"formInvestimento\"]/div[5]/ul/li[2]/button"));
     }
 
-    public static WebElement simulacaoProntaMensagem(){
+    public static WebElement simulacaoProntaMensagemLabel(){
+        return driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/span[1]"));
+    }
+
+    public static WebElement valorSimulacaoLabel(){
         return driver.findElement(By.xpath("/html/body/div[3]/div/div/div[1]/div/div[2]/span[1]"));
     }
 

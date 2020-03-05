@@ -32,6 +32,7 @@ public class PaginaInicialTests extends BaseTest {
 
         ScreenshotsUtils.teste("realizarSimulacaoTest",  "realizarSimulacaoTest");
         Assert.assertEquals(paginaInicialTasks.getSimulacaoProntaText(), "Em " + tempo + " meses você terá guardado");
+        Assert.assertNotNull(paginaInicialTasks.getValorSimulacao());
     }
 
     @Ignore
